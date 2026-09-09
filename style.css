@@ -16,6 +16,10 @@ body.dark-mode nav a{
 body.dark-mode nav a:hover{
     color:#EFCF78;
 }
+body.dark-mode nav a.active{
+    color:#EFCF78;
+    border-bottom:3px solid #EFCF78;
+}
 body.dark-mode header{
     background:#1A1A1A;
 }
@@ -199,6 +203,11 @@ nav a{
 nav a:hover{
     color:#B8860B;
 }
+nav a.active{
+    color:#B8860B;
+    border-bottom:3px solid #EFCF78;
+    padding-bottom:5px;
+}
 
 /* Theme Toggle Button */
 
@@ -349,6 +358,7 @@ ul li:hover{
 
 #contact{
     text-align:center;
+    min-height:60vh;
 }
 
 #contact p{
