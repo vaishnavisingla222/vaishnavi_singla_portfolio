@@ -354,6 +354,47 @@ ul li:hover{
     background:#D4AF37;
 }
 
+.stats-container{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-card{
+    width:180px;
+    padding:20px;
+    border-radius:15px;
+    background:#EFCF78;
+    color:black;
+    text-align:center;
+    transition:0.3s;
+}
+.stat-card {
+    a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+}
+
+a:active {
+    color: inherit;
+}
+}
+
+.stat-card:hover{
+    transform:translateY(-8px);
+}
+
+
 /* Contact */
 
 #contact{
