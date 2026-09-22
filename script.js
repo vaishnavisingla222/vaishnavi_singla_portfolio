@@ -1,5 +1,4 @@
 const themeToggle = document.getElementById("theme-toggle");
-
 // Check saved theme
 const savedTheme = localStorage.getItem("theme");
 
@@ -7,7 +6,6 @@ if (savedTheme === "dark") {
     document.body.classList.add("dark-mode");
     themeToggle.textContent = "☀️";
 }
-
 // Toggle theme
 themeToggle.addEventListener("click", () => {
 
@@ -29,7 +27,7 @@ themeToggle.addEventListener("click", () => {
 
 });
 
-
+// Interactive Navigation
 const sections = document.querySelectorAll("section, header");
 const navLinks = document.querySelectorAll("nav a");
 window.addEventListener("scroll", () => {
@@ -45,7 +43,6 @@ window.addEventListener("scroll", () => {
         }
 
     });
-
     if (
         window.innerHeight + window.scrollY >=
         document.body.offsetHeight - 10
@@ -62,9 +59,7 @@ window.addEventListener("scroll", () => {
 
     });
 });
-
 const counters = document.querySelectorAll(".counter");
-
 counters.forEach(counter => {
     const updateCount = () => {
         const target = +counter.dataset.target;
@@ -79,6 +74,5 @@ counters.forEach(counter => {
             counter.innerText = target;
         }
     };
-
     updateCount();
 });

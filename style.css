@@ -371,10 +371,13 @@ ul li:hover{
     text-align:center;
     transition:0.3s;
 }
-.stat-card {
-    a {
-    color: inherit;
+.stat-link {
     text-decoration: none;
+    color: inherit;
+    display: block;
+}
+.stat-card {
+    cursor: pointer;
 }
 
 a:visited {
@@ -388,7 +391,7 @@ a:hover {
 a:active {
     color: inherit;
 }
-}
+
 
 .stat-card:hover{
     transform:translateY(-8px);
