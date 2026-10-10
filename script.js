@@ -76,3 +76,47 @@ counters.forEach(counter => {
     };
     updateCount();
 });
+
+const texts = [
+    {
+        id: "name",
+        text: "Vaishnavi Singla"
+    },
+    {
+        id: "role",
+        text: "Full-Stack Developer with AI Integration"
+    },
+    {
+        id: "branch",
+        text:"Computer Science & Engineering"
+    },
+    {
+        id:"College",
+        text:"Thapar Institute of Engineering & Technology"
+    }
+];
+
+let currentElement = 0;
+
+function typeText() {
+    if (currentElement >= texts.length) return;
+
+    const element = document.getElementById(texts[currentElement].id);
+    const text = texts[currentElement].text;
+    let charIndex = 0;
+
+    function typeChar() {
+        if (charIndex < text.length) {
+            element.textContent += text.charAt(charIndex);
+            charIndex++;
+            setTimeout(typeChar, 40);
+        } else {
+            currentElement++;
+            setTimeout(typeText, 300);
+        }
+    }
+
+    typeChar();
+}
+
+window.onload = typeText;
